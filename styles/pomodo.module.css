@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+.main {
+
+    background-color: #151b29;
+    min-height      : 100vh;
+    padding         : 0 0.5rem;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    border          : #000000 solid 1px
+}
+
+.headline {
+    text-align: center;
+    color     : lightsalmon;
+
+}
+.headline::selection{
+    background-color: palegoldenrod;
+}
+.headline::before{
+    content: '"';
+    font-family: Calibri, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+@media (max-width:800px) {
+    .headline {
+        color: green;
+    }
+}
+
+.clock {
+    font-family : 'Roboto', sans-serif;
+    font-size   : 16px;
+    line-height : 18.4px;
+    word-spacing: normal;
+
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    text-align      : center;
+    align-items     : center;
+    width           : 300px;
+    min-height      : 350px;
+    background-color: rgb(240, 74, 19, 0.8);
+    border          : 1px solid #000000;
+    border-radius   : 25px;
+
+}
+
+
+.play_button {
+    background   : none;
+    color        : #ffa280;
+    border       : 2px solid;
+    font-size    : 1em;
+    padding      : 1em 1em;
+    display      : block;
+    width        : 5em;
+    height       : 5em;
+    border-radius: 100%;
+    margin       : 10px;
+    transition   : 0.2s;
+}
+
+.play_button:hover {
+    border-color: #F1FF5C;
+    color       : #ffffff;
+    box-shadow  : 0 0.5em 0.5em -0.4em;
+    transform   : translateY(-0.25em)
+}
+
+.reset_button {
+    display: block;
+    width  : 50px;
+    margin : 10px;
+
+}
