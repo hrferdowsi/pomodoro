@@ -16,7 +16,11 @@ export default function Pomodo() {
         let seconds = t % 60;
         let minutes = (t - seconds) / 60;
 
-        let time: Time;
+        let time: Time = {
+            seconds: '00',
+            minutes: '00'
+        };
+        
         time.seconds = (seconds < 10 ? `0${seconds}` : JSON.stringify(seconds))
         time.minutes = (minutes < 10 ? `0${minutes}` : JSON.stringify(minutes))
 
@@ -102,5 +106,4 @@ export default function Pomodo() {
 
 
 
-  
-  
+

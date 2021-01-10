@@ -13,7 +13,7 @@ const themes = {
     }
 };
 
-//below is my Them color context
+//below is my Theme color context
 const ThemeContext = React.createContext([{}, () => { }]); // Because I want to pass both state and setState
 
 const ThemeProvider = (props) => {
